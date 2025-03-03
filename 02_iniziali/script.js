@@ -4,10 +4,17 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function firstCarattArray (userArray){
+    const returnAarrey = [];
+    for (i = 0; i < userArray.length; i++){
+        returnAarrey.push(userArray[i][0]);
+    };
+    return returnAarrey;
+};
 
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(firstCarattArray(names));
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
