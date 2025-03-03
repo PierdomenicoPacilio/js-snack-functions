@@ -4,15 +4,26 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
+// function vowelsIn (string) {
+//     let count = 0;
+//     for (i = 0; i < string.length; i++){
+//         if(string[i].toLowerCase() === 'a' || string[i].toLowerCase() === 'e' || string[i].toLowerCase() === 'i' || string[i].toLowerCase() === 'o' || string[i].toLowerCase() === 'u'){
+//             count += 1;
+//         };
+//     };
+//     return count;
+// };
+
 function vowelsIn (string) {
     let count = 0;
+    const vowels = ['a','e','i','o','u'];
     for (i = 0; i < string.length; i++){
-        if(string[i].toLowerCase() === 'a' || string[i].toLowerCase() === 'e' || string[i].toLowerCase() === 'i' || string[i].toLowerCase() === 'o' || string[i].toLowerCase() === 'u'){
-            count += 1;
-        };
+        if(vowels.includes(string[i].toLowerCase())) count += 1;
     };
     return count;
 };
+
+
 
 
 // Invoca la funzione qui e stampa il risultato in console
