@@ -4,7 +4,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function firstCarattArray (userArray){
+function firstCharactArray (userArray){
     const returnAarrey = [];
     for (i = 0; i < userArray.length; i++){
         returnAarrey.push(userArray[i][0]);
@@ -14,7 +14,7 @@ function firstCarattArray (userArray){
 
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(firstCarattArray(names));
+console.log(firstCharactArray(names));
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
